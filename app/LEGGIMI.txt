@@ -1,0 +1,21 @@
+SCORTA CASA v1.2.3
+
+Modifiche:
+- Home: rimosso il pulsante Aggiungi dal riquadro verde.
+- Home: inserito un unico pulsante grande Vai alla Lista.
+- Lista: aggiunto in alto a destra il pulsante Tutto acquistato.
+- Tutto acquistato aggiorna le stime di tutti i prodotti presenti, li riporta in A posto e svuota la lista.
+- Aggiunta conferma prima dell'operazione e messaggio finale con il numero di prodotti aggiornati.
+
+Pubblicazione:
+carica il contenuto dello ZIP su Cloudflare come per le versioni precedenti.
+
+MODIFICHE v1.2.2
+- Home: pulsante rinominato in "Vai alla lista della spesa".
+- Sezione Lista rinominata in "Lista spesa".
+- Pulsante "Tutto acquistato" reso visivamente premibile con bordo, sfondo neutro ed effetto alla pressione.
+
+
+MODIFICHE v1.2.3
+- Barre di scorrimento nascoste visivamente in tutta l'app.
+- Lo scorrimento verticale e orizzontale continua a funzionare normalmente.
