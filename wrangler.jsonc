@@ -1,0 +1,23 @@
+{
+  "name": "cosamanca-sync-test",
+  "main": "backend/worker.js",
+  "compatibility_date": "2026-07-26",
+  "assets": {
+    "directory": "./app",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cosa-manca-test",
+      "database_id": "52de5bab-d245-49b7-9d7e-388a7bbfc248",
+      "migrations_dir": "database/migrations"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

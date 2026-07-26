@@ -1,0 +1,42 @@
+SCORTA CASA v1.3.0 SYNC TEST
+
+COSA CONTIENE
+- App v1.2.3 aggiornata con la sezione Sincronizzazione famiglia.
+- Worker Cloudflare che serve app e API.
+- Database D1 configurato con il database cosa-manca-test.
+- Creazione Casa, codice invito, collegamento secondo telefono.
+- Sincronizzazione dell'intero oggetto dati dell'app (anche futuri campi).
+- Uso offline: i dati restano locali e vengono inviati quando torna Internet.
+
+IMPORTANTE
+Questa è una versione di prova. Non sostituire ancora il Worker stabile cosamanca.
+Il modello v1.3.0 sincronizza un'istantanea completa dei dati. Se due telefoni modificano dati nello stesso identico momento, il dispositivo che sincronizza per ultimo determina lo stato finale.
+
+INSTALLAZIONE NEL REPOSITORY LOCALE
+1. Chiudi VS Code oppure lascia aperto il progetto.
+2. Copia TUTTO il contenuto di questa cartella nella cartella locale cosa-manca.
+3. Conferma la sostituzione dei file. Le cartelle backend e database verranno aggiornate.
+4. Apri la cartella cosa-manca in VS Code.
+
+PRIMO TEST LOCALE
+Apri Terminale > Nuovo terminale in VS Code ed esegui:
+  npm install
+  npm run db:local
+  npm run dev
+Poi apri l'indirizzo locale mostrato da Wrangler.
+
+PUBBLICAZIONE TEST
+1. Autenticazione (solo la prima volta):
+   npx wrangler login
+2. Crea le tabelle nel D1 remoto:
+   npm run db:remote
+3. Pubblica il Worker test:
+   npm run deploy
+
+Dopo il deploy apri l'indirizzo workers.dev.
+Sul tuo telefono: Impostazioni > Sincronizzazione famiglia > Crea una Casa.
+Sul telefono di tua moglie: inserisci il codice e scegli Entra nella Casa.
+
+GITHUB
+Dopo il test locale: GitHub Desktop > commit "Aggiunge sincronizzazione v1.3.0 test" > Push origin.
+Non collegare ancora il deploy automatico finché il test su due telefoni non è concluso.
