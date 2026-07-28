@@ -1,6 +1,6 @@
 {
-  "name":"Scorta Casa",
-  "short_name":"Scorta Casa",
+  "name":"Cosa manca?",
+  "short_name":"Cosa manca?",
   "description":"Controlla le scorte di casa e ricorda cosa comprare.",
   "start_url":"./",
   "scope":"./",

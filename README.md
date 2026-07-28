@@ -1,3 +1,3 @@
-# Scorta Casa v1.3.0 Sync Test
+# Cosa manca? v1.4.0
 
 Progetto full-stack Cloudflare Workers + D1. Leggere `GUIDA-V1.3.0-SYNC.txt`.
